@@ -5,7 +5,7 @@ import time
 #check system name, in linux will print 'posix' and in windows will print 'nt'
 print(os.name)
 
-# Set bitrate 50,000
+# Set bitrate 500,000
 os.system('sudo ifconfig can1 down')
 os.system('sudo ip link set can1 type can bitrate 500000')
 os.system("sudo ifconfig can1 txqueuelen 500000")
